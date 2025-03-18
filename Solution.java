@@ -2,10 +2,8 @@ public class Solution {
     public static boolean isPalindrome(int x) {
         int reverse = x;
         int digit = 0 ;
-        int sign = 1;
         if (x<0){
-            sign =-1;
-            x=-x;    
+          return false;  
         }
         while (x>0){
         int remainder = x%10;
@@ -16,6 +14,7 @@ public class Solution {
             return true;
         }
         else {
+            
             return false;
         }
     }
